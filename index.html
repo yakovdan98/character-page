@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/styles.css">
-  <script src="js/script.js"></script>
+  <script src="js/scripts.js"></script>
   <title>Character Builder</title>
 </head>
 
@@ -24,13 +24,12 @@
       What is your hair color?
       </label>
       <select name="hairColor" id="hairColor">
-        <option value="1">Brown</option>
-        <option value="2">Black</option>
-        <option value="3">Red</option>
+        <option>Brown</option>
+        <option>Black</option>
+        <option>Red</option>
       </select>
       <br>
       <label>What is Your body type: </label>
-      <!-- <p>What is your body type?</p> -->
       <label>
         <input type="radio" name="bodyType" value="bulky" checked>
         Bulky
@@ -38,10 +37,6 @@
       <label>
         <input type="radio" name="bodyType" value="thin">
         Thin
-      </label>
-      <label>
-        <input type="radio" name="bodyType" value="tall"> 
-        Tall
       </label>
       <label>
         <input type="radio" name="bodyType" value="average">
@@ -55,9 +50,20 @@
         <option value="1">Go to the gym</option>
         <option value="2">Practice coding</option>
         <option value="3">Go to the bar</option>
-      </select>
+      </select><br>
+      <button type="submit">Submit</button>
      </form>
+
+     <div id="mainOutput" class="hidden">
+     <h2>Results</h2>
+     <p id="output">
+      Your character's name is ______
+    </p>
+     </div>
+
   </div>
+
+  
 
 </body>
 
